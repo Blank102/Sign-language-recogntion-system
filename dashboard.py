@@ -24,7 +24,7 @@ CLASS_NAMES = [
 # ----------------------------
 # LOAD MODEL
 # ----------------------------
-model = load_model("asl_mobilenetv2_model.h5")
+model = load_model("asl_model.h5")
 
 prediction_buffer = deque(maxlen=SMOOTHING_WINDOW)
 output_text = ""
@@ -214,3 +214,4 @@ def update_frame():
 # ----------------------------
 update_frame()
 root.mainloop()
+
